@@ -1,4 +1,9 @@
-hannahcodes.co.uk changelog- updated 14/08/2022
+hannahcodes.co.uk changelog- updated 15/08/2022
+----------------------------------------------------
+v11.2-dev1 (released 15/08/2022) https://github.com/Transgirlcoding/hannahcodes.co.uk/commit/36eb87371c4a53a877f066a9d6f0e04e16f90df9:
+this dev updates includes:
+- new blog post
+- updated links to changelog file as its now viewable in a new location/ repo
 ----------------------------------------------------
 v11.1.2 full release (released: 14/08/2022) https://github.com/Transgirlcoding/hannahcodes.co.uk/pull/62:
 this very small update fixes/reomves:
