@@ -10,7 +10,7 @@
     --hover-active-colour: #F2C7E2;
     --svg-fill-colour: #fff;
     --sorce-code-svg-fill-colour: hsl(214, 7%, 47%);
-    --body-bg-colour: #121212;
+    --body-bg-colour: #0D1117;
     --nav-footer-bg-colour: #131418;
     --nav-text-colour: #f2f5f7;
     --card-bg-colour: #262626;
@@ -24,6 +24,13 @@
 body{
     overflow-x: hidden;
     background-color: var(--body-bg-colour);
+}
+.changelog_body{
+    overflow-x: hidden;
+    background-color: var(--body-bg-colour);
+    max-width: 1500px;
+    margin-left: 15em;
+    margin-right: 15em;
 }
 a{
   color: var(--nav-text-colour);
@@ -248,11 +255,12 @@ a{
             padding: 0;
             margin-bottom: 1em;
           }
+
   .changelog_h1{
     padding-top: 1em;
     margin: auto;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.25em;
     color: var(--nav-text-colour);
     @media screen and (max-width: 800px){
       padding-top: 7em;
@@ -262,15 +270,13 @@ a{
     }
     
 }
-.card_display{
-    display: flex;
 
-}
 hr { 
-    border-top: 2px solid var(--top-border-colour); 
-  width: 96%;
+    border-top: 1px solid var(--top-border-colour); 
+  width: 97%;
   margin-left: 1em;
   margin-top: .3em;
+  margin: auto;
   align-items: center;
  
   }
