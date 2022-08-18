@@ -38,6 +38,7 @@ a{
 
 .index_h1{
     padding-top: 1em;
+    padding-bottom: 5em;
     margin: auto;
     text-align: center;
     color: var(--nav-text-colour);
@@ -50,102 +51,203 @@ a{
     
 }
 
-.band {
+.project_band {
     width: 85%;
     max-width: 1500px;
     margin: 0 auto;
-    margin-left: 30%;
-    
     display: grid;
-    align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-gap: 20px;
-    @media screen and (max-width: 800px){
-      margin-bottom: 1.5em;
-    }
     @media (min-width: 30em) {
-      grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
-    
     @media (min-width: 60em) {
-      grid-template-columns: repeat(4, 1fr);
-    }
+        grid-template-columns: repeat(4, 1fr);
+    }   
   }
-  
-  .card {
-    background: var(--card-bg-colour);
+  .project_card {
+    background: var(--light-card-bg-colour);
     text-decoration: none;
-    color: var(--nav-text-colour);
-    box-shadow: 0 2px 5px var(--card-box-shadow-colour);
+    box-shadow: 0 2px 5px var(--light-card-box-shadow-colour);
     display: flex;
     flex-direction: column;
     min-height: 100%;
-  
-    // sets up hover state
+    min-width: 100%;
     position: relative;
     top: 0;
-    transition: all .1s ease-in;
-   
+    transition: all 0.1s ease-in;
     &:hover {
       top: -2px;
-      box-shadow: 0 4px 5px var(--card-box-shadow-hover-colour);
-     
+      box-shadow: 0 4px 5px var(--light-card-box-shadow-hover-colour);
+    }
+    @media (prefers-color-scheme: dark) {
+      background: var(--card-bg-colour);
+            text-decoration: none;
+            color: var(--nav-text-colour);
+            box-shadow: 0 2px 5px var(--card-box-shadow-colour);
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+            position: relative;
+            top: 0;
+            transition: all 0.1s ease-in;
+            &:hover {
+              top: -2px;
+            box-shadow: 0 4px 5px var(--card-box-shadow-hover-colour);
+            }
     }
     
     article {
       padding: 20px;
       flex: 1;
-      
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
-    
     h1 {
-      font-size: 20px;
+      font-size: 18px;
       margin: 0;
-      margin: auto;
-      text-align: center;
-      color: var(--card-title-span-colour);
-      
+      @media (prefers-color-scheme: dark) {
+      h1 {
+        font-size: 20px;
+        margin: 0;
+      }
     }
-    
-    p {
-      flex: 1;
-      line-height: 1.4;
     }
-    
-    span {
-      font-size: 12px;
-      font-weight: bold;
-      color: var(--card-title-span-colour);
-      text-transform: uppercase;
-      letter-spacing: .05em;
-      margin: 2em 0 0 0;
-      padding-right: 3em;
-      
-    }
-    .span_flex{
-      display: flex;
-    }
-    
     .thumb {
       padding-bottom: 60%;
+      min-height: 100%; 
+      width: 100%;
+      background-size: cover;
+    }
+    .blog_page_thumb {
+      padding-bottom: 60%;
+      min-height: 100%;
+      width: 100%;
       background-size: cover;
       background-position: center center;
     }
   }
-  
-  .item-1 {
-    @media (min-width: 60em) {
-      grid-column: 1 / span 2;
-      
-      h1 {
-        font-size: 24px;
-      }
+  @media (min-width: 60em) {
+    .item-1 {
+      grid-column: 1/span 2;
+    }
+    .item-1 h1 {
+      font-size: 24px;
     }
   }
+  .projects_links {
+    border: 0.2em;
+    text-decoration: none;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    margin-left: .75em;
+    padding-top: auto;
+  &:hover{
+    border: 0.2em;
+    color: var(--light-hover-active-colour);
+    text-decoration: none;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    margin-left: .75em;
+    padding-top: auto;
+  }
+  @media (prefers-color-scheme: dark) {
+    &:hover{
+      color: var(--hover-active-colour);
+    }
+  }
+  }
+  .projects_text{
+    text-align: center;
+    color: var(--light-nav-text-colour);
+  @media (prefers-color-scheme: dark) {
+      color: var(--nav-text-colour);
+  }
+  }
+  
+  .project_h1{
+  margin: auto;
+  text-align: center;
+  padding-top: 5em;
+  color: var(--light-nav-text-colour);
+  @media (prefers-color-scheme: dark) {
+    color: var(--nav-text-colour);
+    
+  }
+  }
+  .link_placement{
+    margin: auto;
+    display: flex;
+    padding-top: auto;
+    align-items: center;
+    text-align: center;
+    padding-top: .35em;
+    }
+    .source_code_links {
+      border: 0.2em;
+      color: var(--light-sorce-code-svg-fill-colour);
+      text-decoration: none;
+      display: inline-block;
+      align-items: center;
+      text-align: center;
+      font-size: 18px;
+      margin-left: .75em;
+      padding-top: auto;
+    &:hover{
+      border: 0.2em;
+    color: var(--light-hover-active-colour);
+    text-decoration: none;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    margin-left: .75em;
+    padding-top: auto;
+    }
+    @media (prefers-color-scheme: dark) {
+      &:hover{
+        color: var(--hover-active-colour);
+      }
+    }
+    }
+    svg{
+      fill: var(--light-svg-fill-colour);
+      width: 2.5em;
+      height: 2.5em;
+      padding-left: .9em;
+      padding-right: auto;
+      @media (prefers-color-scheme: dark) {
+          fill: var(--svg-fill-colour);
+      }
+      }
+      .source_code_svg{
+        fill: var(--light-sorce-code-svg-fill-colour);
+        width: 2em;
+        height: 2em;
+        padding-left: .7em;
+        padding-right: auto;
+        }
+        .head_text_projects {
+          margin: 0.1em 1em;
+          margin-left: 2em;
+          padding-bottom: 0.3em;
+          }
+          .project_links_placement{
+          display: flex;
+          margin: auto;
+          }
+          .projects_img{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 1em;
+          }
   .changelog_h1{
     padding-top: 1em;
     margin: auto;
@@ -159,6 +261,10 @@ a{
       padding-right: 2em;
     }
     
+}
+.card_display{
+    display: flex;
+
 }
 hr { 
     border-top: 2px solid var(--top-border-colour); 
