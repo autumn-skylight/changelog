@@ -38,6 +38,9 @@ body{
 }
 a{
   color: var(--nav-text-colour);
+  @media screen and (max-width: 800px){
+    margin-right: 1em;
+  }
   &:hover{
     color: var(--hover-active-colour);
   }
