@@ -35,6 +35,12 @@ body {
   margin-left: 15em;
   margin-right: 15em;
 }
+@media screen and (max-width: 800px) {
+  .changelog_body {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
 a {
   color: var(--nav-text-colour);
@@ -52,10 +58,11 @@ a:hover {
 }
 @media screen and (max-width: 800px) {
   .index_h1 {
-    padding-top: 7em;
+    padding-top: 2em;
     font-size: 1.25em;
     padding-left: 2em;
     padding-right: 2em;
+    padding-bottom: 1em;
   }
 }
 
@@ -286,7 +293,7 @@ svg {
 }
 @media screen and (max-width: 800px) {
   .changelog_h1 {
-    padding-top: 7em;
+    padding-top: 1em;
     font-size: 1.25em;
     padding-left: 2em;
     padding-right: 2em;
@@ -301,13 +308,31 @@ hr {
   margin: auto;
   align-items: center;
 }
+@media screen and (max-width: 800px) {
+  hr {
+    width: 90%;
+  }
+}
 
 h2 {
   padding-top: 0.7em;
   font-size: 1em;
 }
+@media screen and (max-width: 800px) {
+  h2 {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
 
 p, h2 {
   color: var(--nav-text-colour);
   padding-left: 1em;
+}
+
+@media screen and (max-width: 800px) {
+  p {
+    margin-right: 1.5em;
+    margin-left: 1em;
+  }
 }/*# sourceMappingURL=main.css.map */
