@@ -37,6 +37,7 @@ body {
 }
 @media screen and (max-width: 800px) {
   .changelog_body {
+    max-width: 1000px;
     margin-left: 0;
     margin-right: 0;
   }
