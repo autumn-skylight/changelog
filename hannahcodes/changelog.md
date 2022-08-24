@@ -166,7 +166,7 @@ this update adds:
 - version 9 code to old directory/folder 
 - and new card on projects.html
 --------------------------------------------
-v10-rc8 (released: 26/06/2022) https://github.com/Transgirlcoding/hannahcodes.co.uk/pull/39:
+v10-rc8 (released: 26/04/2022) https://github.com/Transgirlcoding/hannahcodes.co.uk/pull/39:
 this update includes:
 - further improvements to blog nav bar on smaller screens
 --------------------------------------------
