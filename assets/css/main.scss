@@ -24,6 +24,7 @@
 body{
     overflow-x: hidden;
     background-color: var(--body-bg-colour);
+    color: var(--nav-text-colour);
 }
 .changelog_body{
     overflow-x: hidden;
@@ -282,14 +283,13 @@ hr {
     border-top: 1px solid var(--top-border-colour); 
   width: 97%;
   margin-left: 1em;
-  margin-top: .3em;
-  margin: auto;
+  margin-top: .6em;
   align-items: center;
   @media screen and (max-width: 800px){
     width: 90%;
   }
   }
-  h2{
+  h2, h3{
     padding-top: .7em;
     font-size: 1em;
     @media screen and (max-width: 800px){
@@ -301,9 +301,22 @@ hr {
     color: var(--nav-text-colour);
     padding-left: 1em;
   }
+  h3 {
+    color: var(--nav-text-colour);
+    padding-left: 1.75em;
+  }
+  li{
+    margin-left: 3.5em;
+    margin-right: 1.5em;
+  }
   p{
     @media screen and (max-width: 800px){
       margin-right: 1.5em;
       margin-left: 1em;
     }
+  }
+
+  hr.test{
+    border: .2px solid #171d29;
+    margin-top: .5em;
   }

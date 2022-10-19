@@ -26,6 +26,7 @@
 body {
   overflow-x: hidden;
   background-color: var(--body-bg-colour);
+  color: var(--nav-text-colour);
 }
 
 .changelog_body {
@@ -306,8 +307,7 @@ hr {
   border-top: 1px solid var(--top-border-colour);
   width: 97%;
   margin-left: 1em;
-  margin-top: 0.3em;
-  margin: auto;
+  margin-top: 0.6em;
   align-items: center;
 }
 @media screen and (max-width: 800px) {
@@ -316,12 +316,12 @@ hr {
   }
 }
 
-h2 {
+h2, h3 {
   padding-top: 0.7em;
   font-size: 1em;
 }
 @media screen and (max-width: 800px) {
-  h2 {
+  h2, h3 {
     margin-left: 1em;
     margin-right: 1em;
   }
@@ -332,9 +332,24 @@ p, h2 {
   padding-left: 1em;
 }
 
+h3 {
+  color: var(--nav-text-colour);
+  padding-left: 1.75em;
+}
+
+li {
+  margin-left: 3.5em;
+  margin-right: 1.5em;
+}
+
 @media screen and (max-width: 800px) {
   p {
     margin-right: 1.5em;
     margin-left: 1em;
   }
+}
+
+hr.test {
+  border: 0.2px solid #171d29;
+  margin-top: 0.5em;
 }/*# sourceMappingURL=main.css.map */
