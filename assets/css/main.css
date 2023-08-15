@@ -352,4 +352,24 @@ li {
 hr.test {
   border: 0.2px solid #171d29;
   margin-top: 0.5em;
+}
+
+.removed {
+  color: rgb(255, 181, 181);
+}
+
+.added {
+  color: rgb(181, 255, 181);
+}
+
+.fixed {
+  color: rgb(255, 235, 181);
+}
+
+.changed {
+  color: rgb(181, 240, 255);
+}
+
+.issues {
+  color: rgb(255, 181, 233);
 }/*# sourceMappingURL=main.css.map */
