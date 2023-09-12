@@ -1,1 +1,1 @@
-checkout the changelog for my different projects here
+checkout the changelog for my personail portfolio here
