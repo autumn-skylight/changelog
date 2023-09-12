@@ -1,1 +1,1 @@
-checkout the changelog for my personail portfolio here
+checkout the changelog for my personal portfolio here
