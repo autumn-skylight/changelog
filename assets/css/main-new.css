@@ -110,7 +110,8 @@ a {
   transition: 0.4s;
 }
 
-.active, .accordion:hover {
+.active,
+.accordion:hover {
   background-color: #575757;
 }
 
@@ -151,6 +152,7 @@ a {
   height: 100%;
   background-color: #333;
   padding-top: 20px;
+  overflow-y: scroll;
   transition: transform 0.3s ease;
   transform: translateX(0);
 }
