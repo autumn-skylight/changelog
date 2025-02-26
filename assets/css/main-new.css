@@ -1,3 +1,27 @@
+.removed {
+  color: rgb(255, 181, 181);
+}
+
+.added {
+  color: rgb(181, 255, 181);
+}
+
+.fixed {
+  color: rgb(255, 235, 181);
+}
+
+.amended {
+  color: rgb(229, 255, 181);
+}
+
+.issues {
+  color: rgb(255, 181, 233);
+}
+
+.renamed {
+  color: rgb(209, 181, 255);
+}
+
 body {
   background-color: #121212;
   color: #ffffff;
@@ -33,12 +57,16 @@ p {
   max-width: 600px;
 }
 
+hr {
+  color: rgba(138, 84, 139, 0.5215686275);
+}
+
 .version {
   margin-bottom: 20px;
 }
 
 .version h2 {
-  color: #db8df3;
+  color: #ffc9ff;
 }
 
 .version ul {
@@ -47,7 +75,6 @@ p {
 }
 
 .version ul li {
-  background-color: #1f1f1f;
   padding: 10px;
   border-radius: 5px;
   margin-right: 50px 0;
