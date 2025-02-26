@@ -85,41 +85,72 @@ margin-top: 2.5em;
 div{
 margin-top: -4em;
 display: block;
-
+@media screen and (max-width: 800px){
+  margin-left: -10%;
+}
 }
 .div_2{
 margin-top: -12.5em;
 display: block;
+@media screen and (max-width: 800px){
+  margin-left: -10%;
+}
 
 }
 .div_3{
 margin-top: -4.5em;
 display: block;
+@media screen and (max-width: 800px){
+  margin-left: -10%;
+}
 
 }
 .div_4{
 margin-top: -11.5em;
 display: block;
+@media screen and (max-width: 800px){
+  margin-left: -10%;
+}
 
 }
 .div_5{
 margin-top: -6em;
 display: block;
+@media screen and (max-width: 800px){
+  margin-left: -10%;
+margin-top: 1em;
+}
+}
+.mobile{
+@media screen and (max-width: 800px){
+display: flex;
+margin-top: .5em;
+padding-top: 5em;
 
+}
 }
 .div_6{
 margin-top: -13em;
 display: block;
+@media screen and (max-width: 800px){
+  margin-left: -10%;
+}
 
 }
 .div_7{
 margin-top: -6em;
 margin-bottom: 2.5em;
 display: block;
+@media screen and (max-width: 800px){
+  margin-left: -10%;
+}
 
 }
 h2, p{
 margin-left: 30%;
+@media screen and (max-width: 800px){
+  margin-left: 10%;
+}
 
 }
 h2{
@@ -184,7 +215,7 @@ font-size: .85em;
 display: block;
 color: #ffffff8e;
 @media screen and (max-width: 800px){
-  margin-left: 25%;
+  margin-left: 10%;
 }
 }
 
@@ -199,3 +230,4 @@ a{
 .known_li{
 font-size: .80em;
 }
+
