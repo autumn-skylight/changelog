@@ -28,6 +28,11 @@
   font-size: 1em;
 }
 
+.h3_header {
+  color: rgba(184, 181, 181, 0.557);
+  font-size: 1.3em;
+}
+
 .version_date {
   color: rgba(255, 255, 255, 0.804);
   font-size: 1em;
