@@ -28,6 +28,12 @@
   font-size: 1em;
 }
 
+.a_link_dev {
+  color: rgba(184, 181, 181, 0.557);
+  text-decoration: none;
+  font-size: 0.75em;
+}
+
 .h3_header {
   color: rgba(184, 181, 181, 0.557);
   font-size: 1.3em;
@@ -74,7 +80,11 @@ p {
 }
 
 hr {
-  color: rgba(138, 84, 139, 0.5215686275);
+  color: rgb(233, 179, 234);
+}
+
+.hr_divider {
+  color: rgba(87, 68, 87, 0.598);
 }
 
 .version {
