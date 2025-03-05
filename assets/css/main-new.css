@@ -107,7 +107,7 @@ img {
 }
 
 .svg_sidebar {
-  max-height: 30px;
+  max-height: 20px;
 }
 
 img:hover {
@@ -151,15 +151,16 @@ a {
   padding: 15px;
   width: 100%;
   border: none;
-  text-align: left;
+  text-align: center;
   outline: none;
-  font-size: 15px;
+  font-size: 0.75em;
   transition: 0.4s;
 }
 
 .active,
 .accordion:hover {
   background-color: #575757;
+  padding: 15px;
 }
 
 .panel {
