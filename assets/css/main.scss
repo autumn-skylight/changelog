@@ -72,6 +72,12 @@ h1 {
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: -0.3%;
+  font-size: 1.4em;
+  @media screen and (max-width: 800px) {
+    text-align: center;
+    align-self: center;
+    font-size: 1.2em;
+  }
 }
 p {
   color: #ffffff;
