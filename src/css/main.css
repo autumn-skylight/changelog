@@ -87,6 +87,7 @@ a {
 .home-button:hover {
   background: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.35);
+  color: var(--rose);
 }
 
 .hero {
@@ -127,129 +128,6 @@ a {
   color: rgba(245, 226, 242, 0.82);
 }
 
-.primary-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--text);
-  border-radius: 999px;
-  padding: 1rem 1.5rem;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
-  transition:
-    transform 0.2s ease,
-    border-color 0.2s ease;
-}
-
-.primary-btn:hover {
-  transform: translateY(-2px);
-  border-color: rgba(255, 255, 255, 0.4);
-}
-
-.hero-figure {
-  position: relative;
-  min-height: 500px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-.glow {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(25px);
-  opacity: 0.8;
-}
-
-.glow-one {
-  width: 260px;
-  height: 260px;
-  background: rgba(255, 174, 214, 0.3);
-  left: 15%;
-  top: 8%;
-}
-
-.glow-two {
-  width: 300px;
-  height: 300px;
-  background: rgba(181, 214, 255, 0.24);
-  right: 10%;
-  bottom: 2%;
-}
-
-.figure-card {
-  position: relative;
-  width: min(100%, 440px);
-  min-height: 300px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 28px;
-  background: #1b1425;
-  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.28);
-  overflow: hidden;
-  padding: 1.2rem;
-}
-
-.figure-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-}
-
-.figure-card__top {
-  position: relative;
-  z-index: 1;
-  display: inline-block;
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.figure-card__title {
-  position: relative;
-  z-index: 1;
-  margin-top: 5rem;
-  font-size: clamp(2.1rem, 4vw, 3.5rem);
-  line-height: 1;
-  letter-spacing: -0.06em;
-  font-weight: 800;
-  color: #fff7fd;
-}
-
-.figure-card__description {
-  position: relative;
-  z-index: 1;
-  max-width: 32ch;
-  margin: 0.75rem 0 0;
-  color: rgba(255, 247, 253, 0.82);
-  font-size: 0.95rem;
-  line-height: 1.55;
-}
-
-.figure-card__tags {
-  position: relative;
-  z-index: 1;
-  margin-top: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-}
-
-.figure-card__tags span {
-  display: inline-block;
-  border-radius: 999px;
-  padding: 0.46rem 0.75rem;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #251823;
-  background: linear-gradient(135deg, #ffe0ef, #d8d5ff);
-}
-
 .changelog {
   position: relative;
   z-index: 1;
@@ -274,15 +152,18 @@ a {
   letter-spacing: -0.05em;
 }
 
-body > h1 {
+body > p {
   text-align: center;
-  margin-top: -5em;
+  margin-top: -10em;
 }
-
-body > h1 + p {
-  text-align: center;
+.arrow_svg {
+  width: 2em;
+  height: 2em;
+  transform: rotate(180deg);
+  fill: currentColor;
+  padding-left: 0.2em;
+  padding-top: -0.3em;
 }
-
 .version ul {
   list-style: none;
   padding-left: 0;
@@ -352,6 +233,9 @@ body > h1 + p {
 
 .renamed {
   color: #c69ffc;
+}
+.please_note {
+  color: #fa8383;
 }
 .git_svg {
   width: 1.5em;
